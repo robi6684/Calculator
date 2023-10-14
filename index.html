@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>CALCULATOR</h1>
+  <div class="calculator">
+    <input type="text" id="text-display" value="" disabled="true">
+    <div class="row">
+      <button class="function" onclick="clean()">C</button>
+      <button class="function" onclick="back()">🔙</button>
+      <button class="function" onclick="operator('%')">%</button>
+      <button class="operator" onclick="operator('/')">÷</button>
+    </div>
+    <div class="row">
+      <button class="number" onclick="number(7)">7</button>
+      <button class="number" onclick="number(8)">8</button>
+      <button class="number" onclick="number(9)">9</button>
+      <button class="operator" onclick="operator('*')">x</button>
+    </div>
+    <div class="row">
+      <button class="number" onclick="number(4)">4</button>
+      <button class="number" onclick="number(5)">5</button>
+      <button class="number" onclick="number(6)">6</button>
+      <button class="operator" onclick="operator('-')">-</button>
+    </div>
+    <div class="row">
+      <button class="number" onclick="number(1)">1</button>
+      <button class="number" onclick="number(2)">2</button>
+      <button class="number" onclick="number(3)">3</button>
+      <button class="operator" onclick="operator('+')">+</button>
+    </div>
+    <div class="row">
+      <button class="number" onclick="doubleZero()">00</button>
+      <button class="number" onclick="number(0)">0</button>
+      <button class="number" onclick="decimal()">.</button>
+      <button class="operator" onclick="result()">=</button>
+    </div>
+    
+  </div>
+
+
+  <script src="main.js"></script>
+</body>
+</html>
